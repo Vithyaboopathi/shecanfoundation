@@ -105,7 +105,10 @@ body.dark nav {
 .nav-links a:hover::after {
   width: 100%;
 }
-
+#theme-toggle i {
+  font-size: 20px;
+  transition: 0.3s ease;
+}
 .toggle-btn {
   border: none;
   padding: 12px 18px;
@@ -536,9 +539,12 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .hero-content h1 {
     font-size: 34px;
+  }
+  .logo h2 {
+    display: none;
   }
 
   .section-title h2 {
