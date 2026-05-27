@@ -3,11 +3,15 @@
 function toggleMode() {
   document.body.classList.toggle("dark");
 }
+// Mobile Menu Toggle
 
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
 // Volunteer Button
 
 document.getElementById("volunteerBtn").addEventListener("click", function () {
-  alert("Thank you for showing interest in volunteering ❤️");
+  alert("Thank you for showing interest in volunteering ");
 });
 
 // Counter Animation
