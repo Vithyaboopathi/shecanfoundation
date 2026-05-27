@@ -1,29 +1,24 @@
 // Dark Mode
-
+/*
 function toggleMode() {
   document.body.classList.toggle("dark");
+}*/
+function toggleMode() {
+  document.body.classList.toggle("dark");
+
+  const icon = document.getElementById("theme-icon");
+
+  if (document.body.classList.contains("dark")) {
+    icon.classList.replace("fa-moon", "fa-sun");
+  } else {
+    icon.classList.replace("fa-sun", "fa-moon");
+  }
 }
 // Mobile Menu Toggle
 
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("active");
 }
-
-//Theme Toggle
-const toggleBtn = document.getElementById("theme-toggle");
-const icon = document.getElementById("theme-icon");
-
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-
-  if (document.body.classList.contains("dark-mode")) {
-    icon.classList.remove("fa-moon");
-    icon.classList.add("fa-sun");
-  } else {
-    icon.classList.remove("fa-sun");
-    icon.classList.add("fa-moon");
-  }
-});
 // Volunteer Button
 
 document.getElementById("volunteerBtn").addEventListener("click", function () {

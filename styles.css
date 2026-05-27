@@ -156,7 +156,7 @@ body.dark nav {
 }
 
 .hero-content h1 {
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1.2;
   margin-bottom: 20px;
   color: var(--secondary);
@@ -212,7 +212,7 @@ body.dark nav {
 }
 
 .hero-image img {
-  width: 380px;
+  width: 450px;
   max-width: 100%;
   border-radius: 30px;
   border: 5px solid var(--primary);
